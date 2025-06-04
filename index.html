@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A* Algorithm Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@datastructures-js/heap@7.2.1/dist/heap.min.js"></script>
+    </head>
+    <body>
+    <header>
+        <!-- <h1>Welcome to My Simple hTML Page</h1> -->
+        </header>
+
+        <div id="title"><h2>A* Algorithm Simulation</div>
+        <div class="summary">
+            <div class="line">Total cost of optimal path: <span id="total-cost"></span></div>
+            <div class="line">Path: <span id="path"></span></div>
+        </div>
+
+        <div id="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: yellow;"></div>
+                <div class="legend-text">Node in Optimal Path</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: dodgerblue;"></div>
+                <div class="legend-text">Unvisited Node</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #ff0000;"></div>
+                <div class="legend-text">Congested Zone</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: darkorange;"></div>
+                <div class="legend-text">Reachable Node</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: lightgreen;"></div>
+                <div class="legend-text">Visited Node</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #0000ff;"></div>
+                <div class="legend-text">Node currently being processed</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #000;"></div>
+                <div class="legend-text">Impassable Node</div>
+            </div>
+        </div>
+    
+<div id="visited-nodes-container">
+    <div id="nodes-visited" class="text-description"><h1>Nodes visited</h1></div>
+
+    <div id="visited-nodes">
+    
+    </div>
+
+    </div>
+
+<div id="screen-container">
+    <div id="nodes-reachable" class="text-description"><h1>Nodes Reachable (Lowest f-value node first)</h1></div>
+
+    <div id="screen">
+        
+    </div>
+
+</div>
+
+    <div id="grid-container" class="container">
+        
+    </div>
+        <table id="square-container" class="container">
+            
+        </table>
+        
+        <div id="offset-square" class='container'></div>
+    </body>
+   
+    <script src="script.js"></script>
+
+    </html>
